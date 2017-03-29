@@ -63,7 +63,8 @@ public class Main {
 						System.out.println();
 					}
 					if (c.equalsIgnoreCase("a") || c.equalsIgnoreCase("length")) {
-						System.out.println("The length of the example text is" + va.Text.length());
+						System.out.println("The length of the example text is " + va.Text.length());
+						System.out.println("And the example text is " + va.Text);
 					} else if (c.equalsIgnoreCase("b") || c.equalsIgnoreCase("charAt")) {
 						System.out.println("What is the index number? ");
 						int d = sc.nextInt();
@@ -566,6 +567,9 @@ public class Main {
 					String e = sc.next();
 					ex.Mathematics(c, d, e);
 
+				}
+				else if(b.equalsIgnoreCase("null") || b.equalsIgnoreCase("c")){
+					ex.NullPointer();
 				}
 
 			} else if (a.equalsIgnoreCase("Sorting") || a.equalsIgnoreCase("g") || a.equalsIgnoreCase("Iteration")) {

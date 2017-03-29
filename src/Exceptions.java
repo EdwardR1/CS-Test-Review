@@ -1,8 +1,10 @@
+import java.util.ArrayList;
 
 public class Exceptions {
 	
 	public static Variables v = new Variables();
 	
+	// Array Index Out of Bounds
 	public static void Number(int a, int b) {
 		for (int i = 0; i < v.nums.length; i++) {
 			for (int j = 0; j < v.nums[i].length; j++) {
@@ -19,6 +21,34 @@ public class Exceptions {
 		}
 	}
 
+	// NullPointerException
+	public static void NullPointer(){
+		String x1 = null;
+		try{
+			System.out.println(x1.toString());
+		} catch(NullPointerException e){
+			System.out.println("Error found at " + e);
+			System.out.println();
+			System.out.println("Variable is a null, so NullPointerException is casted");
+			System.out.println("");
+			System.out.println("You tried to cast a null valued object to a String and got a NullPointerException,"
+					+ "\nthis is what happens when the exception is caught. "
+					+ "\nWhat happens next is where the exception is thrown.");
+			System.out.println();
+			throw new NullPointerException("Null Value casted to String");
+		}
+	}
+	
+	// ArrayStoreException
+	public static void ArrayStore(int a){
+		int[] intal = new int[5];
+		try{
+			intal[0] = a;
+		} catch(ArrayStoreException e){
+			
+		}
+	}
+	
 	// ArithmeticException
 	public static void Mathematics(int a, int b, String action) {
 

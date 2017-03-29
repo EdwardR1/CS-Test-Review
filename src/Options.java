@@ -131,6 +131,7 @@ public class Options {
 		{
 			add("ArrayIndexOutOfBoundsException (a)");
 			add("ArithmeticException (b)");
+			add("NullPointerException (c)");
 		}
 	};
 
