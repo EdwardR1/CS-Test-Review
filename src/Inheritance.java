@@ -1,6 +1,10 @@
 
 public class Inheritance {
+	private int x;
 	public void OS(){
+	}
+	public Inheritance(){
+		
 	}
 }
 
